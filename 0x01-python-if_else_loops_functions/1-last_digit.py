@@ -19,5 +19,6 @@ if lastDigit < 6 and lastDigit != 0:
             "Last digit of {} is {} and is less than {} and not {}"
             .format(number, -(10-lastDigit), 6, 0))
     else:
-        print("Last digit of {} is {} and is less than {} and not {}"
-        .format(number, lastDigit, 6, 0))
+        print(
+            "Last digit of {} is {} and is less than {} and not {}"
+            .format(number, lastDigit, 6, 0))
