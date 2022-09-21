@@ -16,8 +16,8 @@ listint_t *insert_node(listint_t **head, int number)
 
     if ((*head)->n > number)
     {
-        low = new;
         new->next = (*head);
+        low = new;
         return (new);
     }
     while (high && low)
