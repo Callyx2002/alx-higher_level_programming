@@ -8,7 +8,7 @@ def uppercase(str):
             string += test 
         else:
             string += i
-    print(string)
+    print("{}".format(string))
    
 uppercase("best")
 uppercase("Best School 98 Battery street")
