@@ -1,8 +1,8 @@
 #include "lists.h"
 listint_t *insert_node(listint_t **head, int number)
 {
-    listint_t *high, *low, *new;
-    high = low = (*head);
+    listint_t *low, *new;
+    low = (*head);
     new = malloc(sizeof(listint_t));
     if (!new)
     {
