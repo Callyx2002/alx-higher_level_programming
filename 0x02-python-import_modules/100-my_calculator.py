@@ -16,17 +16,16 @@ def main():
             "Unknown operator. Available operators", "+, -, * and /"))
         sys.exit(1)
 
-    match sys.argv[2]:
-        case "+":
+    if sys.argv[2] == "+":
             result = calculator_1.add(first, second)
             print("{} {} {} = {}".format(first, sys.argv[2], second, result))
-        case "-":
+    if sys.argv[2] ==  "-":
             result = calculator_1.sub(first, second)
             print("{} {} {} = {}".format(first, sys.argv[2], second, result))
-        case "/":
+    if sys.argv[2] ==  "/":
             result = calculator_1.div(first, second)
             print("{} {} {} = {}".format(first, sys.argv[2], second, result))
-        case "*":
+    if sys.argv[2] ==  "*":
             result = calculator_1.mul(first, second)
             print("{} {} {} = {}".format(first, sys.argv[2], second, result))
 
