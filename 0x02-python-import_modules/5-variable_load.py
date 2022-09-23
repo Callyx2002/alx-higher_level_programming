@@ -3,8 +3,7 @@ import variable_load_5
 
 
 def main():
-    name = variable_load_5.a
-    print(name)
+    print(variable_load_5.a)
 
 
 if __name__ == "__main__":
