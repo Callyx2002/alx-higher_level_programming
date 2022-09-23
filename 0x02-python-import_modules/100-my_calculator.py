@@ -5,7 +5,6 @@ import sys
 
 def main():
     myList = ["+", "-", "*", "/"]
-    print(sys.argv[3])
     first = int(sys.argv[1])
     second = int(sys.argv[3])
     if (len(sys.argv) != 4):
