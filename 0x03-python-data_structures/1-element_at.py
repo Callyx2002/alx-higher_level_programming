@@ -4,4 +4,4 @@ def element_at(my_list, idx):
         return None
     for i in range(len(my_list)):
         if i == idx:
-            return my_list.index(i)
+            return my_list[i]
