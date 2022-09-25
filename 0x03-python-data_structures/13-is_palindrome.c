@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * is_palindrome - checks if a linked list is a palindrome
  * @head: the first node of a linked list
@@ -35,3 +36,4 @@ int is_palindrome(listint_t **head)
 	}
 	return (1);
 }
+
