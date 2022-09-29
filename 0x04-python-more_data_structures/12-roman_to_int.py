@@ -13,6 +13,8 @@ def roman_to_int(roman_string):
     }
     total = 0
     i = 0
+    if len(roman_string) == 0:
+        return 0
     while i < len(roman_string):
         if roman_string[i] not in list(convert.keys()):
             return 0
