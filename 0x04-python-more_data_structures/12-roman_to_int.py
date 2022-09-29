@@ -15,6 +15,7 @@ def roman_to_int(roman_string):
     i = 0
     if len(roman_string) == 0:
         return 0
+    roman_string = roman_string.upper()
     while i < len(roman_string):
         if roman_string[i] not in list(convert.keys()):
             return 0
