@@ -23,8 +23,12 @@ def roman_to_int(roman_string):
     total = i = 0
     while i < len(roman_string):
         s1 = convert(roman_string[i])
+        ifs1 is None:
+            return None
         if (i + 1 < len(roman_string)):
             s2 = convert(roman_string[i + 1])
+            if s2 is None:
+                return None
             if s1 >= s2:
                 total += s1 + s2
             else:
