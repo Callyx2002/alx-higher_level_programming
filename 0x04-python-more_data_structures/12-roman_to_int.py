@@ -13,15 +13,12 @@ def roman_to_int(roman_string):
     }
     total = 0
     i = 0
-    if len(roman_string) == 0:
-        return 0
-    roman_string = roman_string.upper()
     while i < len(roman_string):
-        if roman_string[i] not in list(convert.keys()):
+        if convert.get(roman_string[i], 0) == 0:
             return 0
         s1 = convert[roman_string[i]]
         if (i + 1 < len(roman_string)):
-            if roman_string[i + 1] not in list(convert.keys()):
+            if convert.get(roman_string[i + 1], 0) == 0:
                 return 0
             s2 = convert[roman_string[i + 1]]
             if s1 >= s2:
