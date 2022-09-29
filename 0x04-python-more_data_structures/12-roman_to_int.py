@@ -37,4 +37,6 @@ def roman_to_int(roman_string):
         else:
             total += s1
             i += 1
+    if total >= 3999:
+        return 0
     return total
