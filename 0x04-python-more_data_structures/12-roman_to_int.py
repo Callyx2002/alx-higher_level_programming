@@ -14,8 +14,12 @@ def roman_to_int(roman_string):
     total = 0
     i = 0
     while i < len(roman_string):
+        if roman_string[i] not in list(convert.keys()):
+            return 0
         s1 = convert[roman_string[i]]
         if (i + 1 < len(roman_string)):
+            if roman_string[i + 1] not in list(convert.keys()):
+                return 0
             s2 = convert[roman_string[i + 1]]
             if s1 >= s2:
                 total += s1 + s2
