@@ -18,7 +18,7 @@ def convert(m):
 
 
 def roman_to_int(roman_string):
-    if type(roman_string) != str:
+    if type(roman_string) != str or len(roman_string) == 0:
         return 0
     total = i = 0
     while i < len(roman_string):
