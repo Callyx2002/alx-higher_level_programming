@@ -18,7 +18,7 @@ def convert(m):
 
 
 def roman_to_int(roman_string):
-    if type(roman_string) is not str:
+    if not isinstance(roman_string, str) or roman_string is None:
         return 0
     total = i = 0
     while i < len(roman_string):
@@ -37,6 +37,4 @@ def roman_to_int(roman_string):
         else:
             total += s1
             i += 1
-    if total >= 3999:
-        return 0
     return total
