@@ -14,21 +14,21 @@ def convert(m):
         return 5
     if m == "I":
         return 1
-    return None
+    return -1
 
 
 def roman_to_int(roman_string):
     if type(roman_string) != str:
-        return None
+        return 0
     total = i = 0
     while i < len(roman_string):
         s1 = convert(roman_string[i])
-        if s1 is None:
-            return None
+        if s1 == -1:
+            return 0
         if (i + 1 < len(roman_string)):
             s2 = convert(roman_string[i + 1])
-            if s2 is None:
-                return None
+            if s2 == -1:
+                return 0
             if s1 >= s2:
                 total += s1 + s2
             else:
