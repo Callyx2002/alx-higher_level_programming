@@ -6,5 +6,4 @@
 class Square:
     """Does nothing"""
     pass
-  """Does nothing"""
-    pass
+
